@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Chardès Tristan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover.zoom.js"></script>
+    <script src="assets/js/hover.zoom.conf.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">CHARDES TRISTAN</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="work.html">Portfolio</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+	
+	<!-- +++++ Contact Section +++++ -->
+	
+	<div class="container pt">
+		<div class="row mt">
+			<div class="col-lg-6 col-lg-offset-3 centered">
+				<h3>CONTACTEZ MOI</h3>
+				<hr>
+				<p class="centered">Voici mes coordonnées, n'hésitez pas à me contacter.</p>
+			</div>
+		</div>
+		<div class="row mt">	
+			<div class="col-lg-8 col-lg-offset-2">
+				<p>Mail : <a href="mailto:name@email.com">tristan.chardesATgmail.com</a></p>
+				<p>Téléphone : <a href="tel:+33783089269">07 83 08 92 69</a></p>
+				<p>Adresse : <a href="https://www.google.fr/maps/place/CROUS+-+Universit%C3%A9+Rennes+1/@48.757494,-3.4524844,17z/data=!3m1!4b1!4m5!3m4!1s0x48122c0346413a81:0x511ce4bf9bf18136!8m2!3d48.757508!4d-3.4503371" target="_blank">Crous, Rue Edouard Branly, Lannion, 22300.</a></p>	
+				<p>Linkedin : <a href="https://www.linkedin.com/in/tristan-chard%C3%A8s-bab977230/" target="_blank">Tristan Chardès</a></p>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	
+	<!-- +++++ Footer Section +++++ -->
+	
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h4>Adresse</h4>
+					<p>
+						Crous,<br/>
+						Rue Edouard Branly, <br/>
+						Lannion, 22300.
+					</p>
+				</div><!-- /col-lg-4 -->
+				<div class="col-lg-4">
+					<h4>Mes Liens</h4>
+					<p>
+						<a href="https://www.linkedin.com/in/tristan-chard%C3%A8s-bab977230/" target="_blank">Linkedin</a><br/>
+						<a href="Meatman#4610" id="texte" onclick="copierTexte(event)">Discord</a><br/>
+					</p>
+				</div><!-- /col-lg-4 -->
+				<div class="col-lg-4">
+					<h4>Liens rapides</h4>
+					<p>
+						<a href="index.html">Accueil</a><br/>
+						<a href="work.html">Portfolio</a><br/>
+						<a href="about.html">À propos</a><br/>
+						<a href="contact.html">Contact</a>
+					</p>
+				</div><!-- /col-lg-4 -->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var texteAcopie = document.getElementById("texte").getAttribute("href")
+		copierTexte = (e) => {
+			e.preventDefault()
+			if (texteAcopie.length) {
+				navigator.clipboard.writeText(texteAcopie).then(() => {
+					alert("Identifiant copié !")
+				})
+			} else {
+				alert("Veillez saisir le texte à copier")
+			}
+		}
+	</script>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
