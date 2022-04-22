@@ -9,12 +9,23 @@
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+:root {
+  --main-color: #0b6623;
+  --second-main-color: rgb(13, 100, 36);
+  --main-lite-color: #14B33E;
+  --text-color: rgb(203, 203, 203);
+  --background-color: #232323;
+  --second-background-color: #2a2a2a;
+  --footer-color: #191919;
+  --title-color: #ededed;
+}
+
 body {
-  	background-color: #ffffff;
+  	background-color: var(--background-color);/*#ffffff;*/
   	font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #555;
+    color: var(--text-color);/*#555;*/
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -24,7 +35,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #333;
+    color: var(--title-color);/*#333;*/
 }
 
 h1 {
@@ -48,7 +59,7 @@ p {
 
 /* Links */
 a {
-    color: #1abc9c;
+    color: var(--main-lite-color);/*#1abc9c;*/
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -95,8 +106,8 @@ a:after {
 }
 
 .navbar-inverse {
-	background-color: #1abc9c;
-	border-color: #16a085;
+	background-color: var(--main-color); /* #1abc9c;*/
+	border-color: var(--second-main-color);/*#16a085;*/
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -144,67 +155,26 @@ a:after {
 #ww {
 	padding-top: 70px;
 	padding-bottom: 70px;
-	background-color: #f2f2f2;
+	background-color: var(--second-background-color);/*#f2f2f2;*/
 }
 
 
 #footer {
-	background-color: #2f2f2f;
+	background-color: var(--footer-color);/*#2f2f2f;*/
 	padding-top: 50px;
 	padding-bottom: 50px; 
 }
 
 #footer p {
-	color: white;
+	color: var(--text-color);/*white;*/
 }
 
 #footer h4 {
-	color: white;
+	color: var(--text-color);/*white;*/
 	text-transform: uppercase;
 	padding-bottom: 20px;
 }
 
-
-/* +++++ Color Wraps / Blog Page +++++ */
-
-#grey {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: #f2f2f2;
-}
-
-#white {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: #ffffff;
-}
-
-
-
-/* Blog Date*/
-bd {
-	font-size: 12px;
-	text-transform: uppercase;
-	color: #d2d2d2;
-	font-weight: 700;
-}
-
-/* Blog Author*/
-ba {
-	font-size: 12px;
-	text-transform: uppercase;
-}
-
-/* Blog Quote */
-.bq {
-	font-size: 22px;
-	padding-top: 30px;
-}
-
-/* Blog Tags */
-bt {
-	font-size: 12px;
-}
 
 /* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
 /* Effects also are controled by hover.zoom.js */
@@ -238,14 +208,14 @@ bt {
 
 .glyphicon {
 	font-size: 40px;
-	color: #1abc9c;
+	color: var(--main-lite-color);/*#1abc9c;*/
 }
 
 /* Button */
 
 .btn-primary {
-	background-color: #1abc9c;
-	border-color: #127461;
+	background-color: var(--main-color);/*#1abc9c;*/
+	border-color: var(--second-main-color);/*#127461;*/
   }
   
   .btn-primary:hover,
@@ -253,31 +223,8 @@ bt {
   .btn-primary:active,
   .btn-primary.active,
   .open .dropdown-toggle.btn-primary {
-	background-color: #18a186;
-	border-color: #116453;
-  }
-  
-  .btn-primary.disabled,
-  .btn-primary[disabled],
-  fieldset[disabled] .btn-primary,
-  .btn-primary.disabled:hover,
-  .btn-primary[disabled]:hover,
-  fieldset[disabled] .btn-primary:hover,
-  .btn-primary.disabled:focus,
-  .btn-primary[disabled]:focus,
-  fieldset[disabled] .btn-primary:focus,
-  .btn-primary.disabled:active,
-  .btn-primary[disabled]:active,
-  fieldset[disabled] .btn-primary:active,
-  .btn-primary.disabled.active,
-  .btn-primary[disabled].active,
-  fieldset[disabled] .btn-primary.active {
-	background-color: #20dab5;
-	border-color: #127461;
-  }
-
-  .btn-primary .badge {
-	color: #20dab5;
+	background-color: var(--main-lite-color);/*#18a186;*/
+	border-color: var(--second-main-color);/*#116453;*/
   }
 
   /* img */
