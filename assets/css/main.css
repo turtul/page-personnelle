@@ -133,9 +133,12 @@ a:after {
 }
 
 .progress-bar-theme {
-  background-color: #1abc9c;
+  background-color: var(--main-lite-color);/*#1abc9c;*/
 }
 
+.progress {
+  background-color: var(--text-color);
+}
 
 /* Helpers */
 
